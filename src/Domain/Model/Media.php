@@ -24,7 +24,7 @@ use Ranky\SharedBundle\Domain\ValueObject\UserIdentifier;
 
 
 #[ORM\Entity]
-#[ORM\Table(name: 'ranky_media')]
+#[ORM\Table(name: 'media__files')]
 #[ORM\Index(columns: ['id', 'name', 'extension', 'mime', 'created_by'], name: 'search_idx')]
 class Media extends AggregateRoot
 {
